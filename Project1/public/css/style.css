@@ -1,0 +1,376 @@
+* {
+    box-sizing: border-box;
+}
+
+/* Style the body */
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0;
+}
+
+/* Header/logo Title */
+.header {
+    font-size: 20px;
+    height: 400px;
+    padding: 80px;
+    text-align: center;
+    background-image: url('../images/head1.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: black;
+}
+.header p {
+    font-size: 26px;
+    color: red;
+}
+
+/* Sticky navbar */
+.navbar {
+    overflow: hidden;
+    background-color: #91a100;
+    position: sticky;
+    top: 0;
+    z-index: 1;
+}
+
+/* Style the navigation bar links */
+.navbar a {
+    float: left;
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 20px;
+    text-decoration: none;
+}
+.phone {
+    font-size: 25px;
+    color: rgb(242, 255, 0);
+    float: right;
+    margin-right: 50px;
+}
+.phone:hover {
+    text-decoration: underline;
+}
+
+/* Right-aligned link */
+.navbar a.right {
+    background-color: #beb818;
+    border-radius: 40px;
+    float: right;
+    margin-right: 10px;
+}
+
+/* Change color on hover */
+.navbar a:hover {
+    font-size: 16px;
+    font-weight: bolder;
+    background-color: #ddd;
+    color: black;
+}
+
+/* Active/current link */
+.navbar a.active {
+    background-color: #beb818;
+    color: white;
+}
+
+/* Column container */
+.row {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+/* Sidebar/left column */
+.side {
+    flex: 30%;
+    background-color: #f1f1f1;
+    padding: 20px;
+}
+
+/* Main column */
+.main {
+    flex: 70%;
+    background-color: white;
+    padding: 20px;
+}
+
+/* Fake image, just for this example */
+.step1,
+.step2 {
+    width: 100%;
+}
+
+.step1 img,
+.step2 img {
+    width: 100%;
+    height: auto;
+}
+
+/* Footer */
+.footer {
+    width: 100%;
+    height: 300px;
+    padding: 20px;
+    text-align: center;
+    background-image: url('../images/foot1.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+.footer1 {
+    width: 100%;
+    height: 300px;
+    background-color: rgba(0, 0, 0, 0.467);
+    position: relative;
+    top: -20px;
+}
+
+.main h2 {
+    font-size: 40px;
+}
+
+#displayed-image {
+    border-radius: 40px;
+    max-width: 100%;
+    height: auto;
+    margin: 20px auto;
+    display: block;
+}
+
+.main p {
+    color: red;
+    font-size: 20px;
+    font-weight: bolder;
+    padding-left: 40px;
+}
+
+marquee {
+    font-size: 30px;
+    background-color: rgba(128, 128, 128, 0.41);
+}
+
+.content1 {
+    color: rgb(255, 255, 255);
+    padding: 100px;
+    padding-left: 150px;
+    font-size: 40px;
+    width: 100%;
+    height: 300px;
+    background-image: url('../images/img21.jpeg');
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.content1 p {
+    padding-left: 40px;
+    width: 700px;
+    border-radius: 40px;
+    background-color: rgba(0, 0, 0, 0.464);
+}
+
+#logo {
+    font-weight: bolder;
+    font-size: 40px;
+    color: #b9ce00;
+    float: left;
+    margin-top: 40px;
+    margin-left: 250px;
+}
+#logo1 {
+    font-size: 20px;
+    color: #b9ce00;
+    position: relative;
+    top: 80px;
+    left: -500px;
+}
+
+.address {
+    width: 400px;
+}
+.address li {
+    width: 440px;
+    margin-bottom: 10px;
+    list-style: none;
+    font-size: 16px;
+    color: white;
+    position: relative;
+    top: 60px;
+    left: 120px;
+}
+
+.links {
+    font-size: 20px;
+    width: 800px;
+    position: relative;
+    top: -125px;
+    left: 590px;
+    z-index: 1;
+}
+.links a {
+    color: #b9ce00;
+    text-decoration: none;
+}
+.links a:hover {
+    color: rgb(255, 0, 0);
+    text-decoration: underline;
+    background-color: rgba(188, 188, 188, 0.149);
+    border-radius: 20px;
+}
+.links li {
+    margin-left: 90px;
+    margin-bottom: 20px;
+    display: inline-block;
+}
+
+.some {
+    width: 550px;
+    height: 100px;
+    background-color: rgba(128, 128, 128, 0.662);
+    border-left: 8px solid white;
+    border-right: 8px solid white;
+    position: relative;
+    top: -250px;
+    left: 780px;
+}
+
+/* Responsive layout - when the screen is less than 1024px wide */
+@media screen and (max-width: 1024px) {
+    .header {
+        padding: 60px;
+        height: auto;
+        background-size: cover;
+    }
+    .header p {
+        font-size: 22px;
+    }
+    .navbar a {
+        padding: 10px 15px;
+        font-size: 14px;
+    }
+    .phone {
+        font-size: 20px;
+        margin-right: 20px;
+    }
+    .main h2 {
+        font-size: 30px;
+    }
+    .main p {
+        font-size: 18px;
+        padding-left: 20px;
+    }
+    .content1 p {
+        width: 90%;
+        padding: 20px;
+    }
+    #logo {
+        font-size: 30px;
+        margin-left: 100px;
+    }
+    #logo1 {
+        font-size: 18px;
+        left: -200px;
+    }
+    .address li {
+        font-size: 14px;
+        left: 20px;
+    }
+    .links {
+        width: 100%;
+        left: 0;
+        text-align: center;
+    }
+    .links li {
+        margin-left: 20px;
+    }
+    .some {
+        width: 90%;
+        left: 5%;
+    }
+}
+
+/* Responsive layout - when the screen is less than 700px wide */
+@media screen and (max-width: 700px) {
+    .row {
+        flex-direction: column;
+    }
+    .navbar a {
+        float: none;
+        width: 100%;
+    }
+    .navbar .phone {
+        display: none;
+    }
+    .content1 {
+        padding: 50px;
+        padding-left: 20px;
+        font-size: 30px;
+    }
+    .content1 p {
+        width: 90%;
+    }
+    .footer {
+        height: auto;
+    }
+    .footer1 {
+        height: auto;
+        top: 0;
+    }
+    #logo {
+        font-size: 24px;
+        margin-left: 0;
+    }
+    #logo1 {
+        font-size: 16px;
+        left: 0;
+        top: 0;
+    }
+    .address li {
+        width: 100%;
+        font-size: 12px;
+        left: 0;
+        top: 0;
+    }
+    .links {
+        top: 0;
+        left: 0;
+        width: 100%;
+        text-align: center;
+    }
+    .links li {
+        margin-left: 5px;
+        display: block;
+        width: 100%;
+    }
+    .some {
+        width: 100%;
+        left: 0;
+    }
+}
+
+/* Responsive layout - when the screen is less than 400px wide */
+@media screen and (max-width: 400px) {
+    .navbar a {
+        padding: 10px 5px;
+        font-size: 12px;
+    }
+    .content1 {
+        font-size: 20px;
+    }
+    .content1 p {
+        font-size: 16px;
+    }
+    #logo {
+        font-size: 20px;
+    }
+    #logo1 {
+        font-size: 14px;
+    }
+    .address li {
+        font-size: 10px;
+    }
+    .links a {
+        font-size: 14px;
+    }
+    .some {
+        height: auto;
+    }
+}

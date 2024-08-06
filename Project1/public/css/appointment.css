@@ -1,0 +1,211 @@
+body {
+    text-align: center;
+    background-image: linear-gradient(rgb(205, 205, 205),rgb(96, 96, 96), rgb(0, 0, 0));
+    background-repeat: no-repeat;
+    background-size: 100% 1000px;
+}
+
+h1 {
+    color: rgba(0, 0, 0, 0.516);
+    font-size: 40px;
+    position: absolute;
+    top: 10px;
+    left: 20px;
+}
+
+.main {
+    padding: 10px;
+    font-size: 20px;
+    font-weight: bolder;
+    height: 570px;
+    background-color: rgba(240, 248, 255, 0.367);
+    border-radius: 40px;
+    position: absolute;
+    top: 100px;
+    left: 555px;
+    display: flex;
+}
+form{
+    position: relative;
+    top: 100px;
+}
+
+.main1 {
+    padding: 15px;
+}
+
+input {
+    text-align: center;
+    padding-right: 5px;
+    width: 350px;
+    border-radius: 4px;
+}
+
+.msg {
+    height: 160px;
+}
+
+button {
+    font-size: 15px;
+    color: white;
+    margin-top: 20px;
+    width: 250px;
+    height: 35px;
+    border-radius: 15px;
+    background-image: linear-gradient(rgb(0, 195, 255), rgb(0, 103, 135), rgb(0, 0, 0));
+}
+button:hover{
+    font-size: 17px;
+    width: 252px;
+    height: 37px;
+    position: relative;
+    top: -1px;
+}
+
+.navbar {
+    overflow: hidden;
+    background-color: #91a100;
+    border-radius: 40px;
+    position: sticky;
+    position: -webkit-sticky;
+    top: 0;
+    z-index: 1;
+}
+
+/* Style the navigation bar links */
+.navbar a {
+    float: left;
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 20px;
+    text-decoration: none;;
+}
+
+.phone {
+    font-size: 25px;
+    color: rgb(242, 255, 0);
+    float: right;
+    margin-right: 50px;
+}
+
+.phone:hover {
+    text-decoration: underline;
+}
+
+/* Right-aligned link */
+.navbar a.right {
+    background-color: #beb818;
+    border-radius: 40px;
+    float: right;
+    margin-right: 20px;
+}
+
+/* Change color on hover */
+.navbar a:hover {
+    font-size: 16px;
+    font-weight: bolder;
+    background-color: #ddd;
+    color: black;
+}
+
+/* Active/current link */
+.navbar a.active {
+    background-color: #beb818;
+    color: white;
+}
+
+.footer {
+    width: 1465px;
+    height: 300px;
+    padding: 20px;
+    text-align: center;
+    background-image: url('../images/foot1.jpg');
+    background-repeat: no-repeat;
+    background-size: 100% 600px;
+    background-position: 00px -100px;
+}
+.footer1{
+    width: 100%;
+    height: 300px;
+    background-color: rgba(0, 0, 0, 0.467);
+    position: relative;
+    top: -20px;
+}
+#logo{
+    font-weight: bolder;
+    font-size: 40px;
+    color: #b9ce00;
+    float: left;
+    margin-top: 40px;
+    margin-left: 250px;
+}
+#logo1{
+    font-size: 20px;
+    color: #b9ce00;
+    position: relative;
+    top: 80px;
+    left: -500px;
+}
+.address{
+    width: 400px;
+}
+.address li{
+    width: 440px;
+    margin-bottom: 10px;
+    list-style: none;
+    font-size: 16px;
+    color: white;
+    position: relative;
+    top: 60px;
+    left: 120px;
+}
+.links{
+    font-size: 20px;
+    width: 800px;
+    position: relative;
+    top: -125px;
+    left: 590px;
+    z-index: 1;
+}
+.links a {
+    color: #b9ce00;
+    text-decoration: none;
+}
+.links a:hover{
+    /* font-size: 21px; */
+    color: rgb(255, 0, 0);
+    text-decoration: underline;
+    background-color: rgba(188, 188, 188, 0.149);
+    border-radius: 20px;
+}
+.links li{
+    margin-left: 90px;
+    margin-bottom: 20px;
+    display: inline-block;
+}
+
+input[type=date] {
+    text-align: center;
+    width: 120px;
+    position: relative;
+    top: 15px;
+    left: 20px;
+}
+
+#slot{
+    width: 185px;
+    float: right;
+    position: relative;
+    top: -10px;
+    right: 20px;
+}
+
+.date{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin-bottom: 5px;;
+    text-align: center;
+}
+

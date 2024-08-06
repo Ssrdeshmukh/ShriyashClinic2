@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Appointment</title>
+    <link rel="stylesheet" href="/css/appointment.css">
+</head>
+
+<body>
+    <div class="navbar">
+        <a href="/index">Home</a>
+        <a href="/fitness">Fitness Calculator</a>
+        <a href="/about">About Us</a>
+        <a href="/services">Services</a>
+        <a href="/appointment" class="active">Book Appointment</a>
+        <a href="/signup" class="right">Sign Up</a>
+        <a href="/login" class="right">Log In</a>
+        <div class="phone">+919767601229</div>
+    </div>
+    <section>
+        <div class="main">
+            <h1>Book Appointment</h1>
+            <form id="appointmentForm" action="/appointment" method="post">
+                <label for="patientName">Patient Name:</label><br>
+                <input type="text" id="patientName" name="patientName" required><br><br>
+                
+                <label for="contactInfo">Contact Information:</label><br>
+                <input type="text" id="contactInfo" name="contactInfo" required class="date"><br>
+
+                <label for="date">Select Date and Preferred Slot:</label><br>
+                <input type="date" id="date" name="date" required class="date">
+                <select id="slot" name="slot" class="date">
+                    <option value="Morning">Morning Slot (9am - 12pm)</option>
+                    <option value="Afternoon">Afternoon Slot (2pm - 5pm)</option>
+                    <option value="Evening">Evening Slot (6pm - 9pm)</option>
+                </select><br><br>
+                
+                <label for="reason">Reason for Appointment: <br> (Optional)</label><br>
+                <textarea id="reason" name="reason" rows="4" required></textarea><br><br>
+                
+                <button type="submit">Submit Appointment</button>
+            </form>
+        </div>
+    </section>
+    <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+    <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+    <div class="footer">
+        <div class="footer1">
+            <span id="logo"><i>Shriyash Clinic</i></span> <br>
+            <span id="logo1">- Dr. Parag Patil</span>
+            <ul class="address">
+                <li>Samarth Plaza, Bharatmata Society Ln, Atharv Park Society, Green Park Society, Bijlinagar, Nigdi,
+                    Pune, Pimpri-Chinchwad, Maharashtra 411033</li>
+                <li>+919767601229</li>
+                <li>paragprakashpatil@gmail.com</li>
+            </ul>
+            <ul class="links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About Us</a></li>
+                <li><a href="appointment.html">Appointment</a></li>
+                <li><a href="#">Give Suggetions to our Clinic.</a></li>
+            </ul>
+        </div>
+    </div>
+</body>
+
+</html>
